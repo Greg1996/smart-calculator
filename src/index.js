@@ -12,14 +12,14 @@ class SmartCalculator {
   }
   multiply(number) {
     this.value *= number;
-    return this.value;
+    return new SmartCalculator(this.value);
   }
   devide(number) {
     this.value /= number;
     return this.value;
   }
   pow(number) {
-    this.value = Math(this.value, number);
+    this.value = Math.pow(this.value, number);
     return this.value;
   }
 }
