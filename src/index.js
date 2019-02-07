@@ -1,6 +1,7 @@
 class SmartCalculator {
   constructor(initialValue) {
     this.value = initialValue;
+    
   }
   add(number) {
     this.value += number;
